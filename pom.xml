@@ -4,16 +4,16 @@
     <repository>
       <id>github</id>
       <name>GitHub Packages</name>
-      <url>https://maven.pkg.github.com/Master-Mils/sendgrid-java-for-keycloak</url>
+      <url>https://maven.pkg.github.com/Master-Mils/sendgrid-for-keycloak</url>
     </repository>
   </distributionManagement>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.mastermils.sendgrid</groupId>
-  <artifactId>sendgrid-java-for-keycloak</artifactId>
+  <groupId>com.sendgrid.mastermils</groupId>
+  <artifactId>sendgrid-for-keycloak</artifactId>
   <name>Twilio SendGrid Java helper library - without BouncyCastle</name>
-  <version>4.10.2-zhh</version>
+  <version>4.10.2-kc</version>
   <description>This Java module allows you to quickly and easily send emails through Twilio SendGrid using Java. This forked lib can be used in Keycloak since it won't conflict with it's BouncyCastle lib.</description>
-  <url>https://github.com/Master-Mils/sendgrid-java-for-keycloak</url>
+  <url>https://github.com/Master-Mils/sendgrid-for-keycloak</url>
   <licenses>
     <license>
       <name>The MIT License (MIT)</name>
@@ -25,10 +25,10 @@
     <jackson.version>2.14.0</jackson.version>
   </properties>
   <scm>
-    <url>https://github.com/Master-Mils/sendgrid-java-for-keycloak</url>
-    <connection>scm:git:git@github.com:Master-Mils/sendgrid-java-for-keycloak.git</connection>
-    <developerConnection>scm:git:git@github.com:Master-Mils/sendgrid-java-for-keycloak.git</developerConnection>
-    <tag>4.10.2</tag>
+    <url>https://github.com/Master-Mils/sendgrid-for-keycloak</url>
+    <connection>scm:git:git@github.com:Master-Mils/sendgrid-for-keycloak.git</connection>
+    <developerConnection>scm:git:git@github.com:Master-Mils/sendgrid-for-keycloak.git</developerConnection>
+    <tag>4.10.2-kc</tag>
   </scm>
   <profiles>
     <profile>
@@ -270,10 +270,14 @@
       <version>${jackson.version}</version>
     </dependency>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit-dep</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpcore</artifactId>
+      <version>4.4.15</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpclient</artifactId>
+      <version>4.5.13</version>
     </dependency>
   </dependencies>
   <reporting>
